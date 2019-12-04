@@ -1,0 +1,32 @@
+### Insert
+POST http://localhost:7071/api/AddDishHttp
+Content-Type: application/json
+
+{
+    "dish" : "Soup",
+    "preparedBy" : "Floor"
+}
+
+### Update
+
+PUT http://localhost:7071/api/UpdateDishHttp
+Content-Type: application/json
+
+{
+    "dish" : "Bread",
+    "preparedBy" : "Floor"
+}
+
+### Remove
+
+DELETE http://localhost:7071/api/RemoveDishHttp
+Content-Type: application/json
+
+{
+    "dish" : "Soup",
+    "preparedBy" : "Floor"
+}
+
+### List
+
+GET http://localhost:7071/api/ListDishesHttp
