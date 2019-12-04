@@ -6,13 +6,13 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using System;
 
-namespace ServerlessAdventCalendar
+namespace ServerlessAdvent.Day01
 {
     public class DreidelHttp
     {
-        private readonly string[] dreidelNames = new string [4]{ "Nun", "Gimmel", "Hay", "Shin" };
+        private readonly string[] dreidelNames = new string[4] { "Nun", "Gimmel", "Hay", "Shin" };
         private readonly Random randomInt = new Random();
-        
+
         [FunctionName(nameof(DreidelHttp))]
         public IActionResult Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
